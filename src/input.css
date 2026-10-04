@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 40%, #fae8ff 100%);
+    color: #1e293b;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Card & Surface Glassmorphism */
+.app-container {
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px -10px rgba(91, 75, 246, 0.12), 0 0 0 1px rgba(226, 232, 240, 0.8);
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+  transition: all 0.15s ease-in-out;
+}
+
+.sidebar-item:hover {
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+.sidebar-item.active {
+  color: #1e293b;
+  background-color: #f1f5f9;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+/* Pastel Cards */
+.card-pastel-pink {
+  background-color: #fdf2f8;
+  border: 1px solid #fce7f3;
+}
+.card-pastel-blue {
+  background-color: #f0f9ff;
+  border: 1px solid #e0f2fe;
+}
+.card-pastel-peach {
+  background-color: #fff7ed;
+  border: 1px solid #ffedd5;
+}
+.card-pastel-teal {
+  background-color: #f0fdfa;
+  border: 1px solid #ccfbf1;
+}
+
+/* Glow & Badges */
+.badge-soft-pink {
+  background-color: #fce7f3;
+  color: #db2777;
+}
+.badge-soft-blue {
+  background-color: #e0f2fe;
+  color: #0284c7;
+}
+.badge-soft-peach {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+.badge-soft-teal {
+  background-color: #ccfbf1;
+  color: #0d9488;
+}
+.badge-soft-purple {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+.badge-soft-amber {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+.badge-soft-green {
+  background-color: #dcfce7;
+  color: #15803d;
+}

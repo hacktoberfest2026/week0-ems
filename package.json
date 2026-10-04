@@ -1,0 +1,33 @@
+{
+  "name": "unisphere-ems",
+  "version": "1.0.0",
+  "description": "Open-Source AI University Event Management System with Gemma Copilot for Hacktoberfest 2026",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/style.css --minify",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "hacktoberfest-2026",
+    "gemma",
+    "open-source-ai",
+    "event-management",
+    "university-ems",
+    "ticketing"
+  ],
+  "author": "Antigravity & Pair Developer",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide": "^1.52.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
