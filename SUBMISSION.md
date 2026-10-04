@@ -6,6 +6,10 @@ tags: devchallenge, weekendchallenge, hf26challenge
 
 *This is a submission for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01)*
 
+<p align="center">
+  <img src="./cover.jpg" alt="UniSphere EMS Banner" width="100%" />
+</p>
+
 ---
 
 ## What I Built
@@ -13,10 +17,10 @@ tags: devchallenge, weekendchallenge, hf26challenge
 I built **UniSphere EMS**, a full-stack open-source University Event Management and Ticketing System with an autonomous **Google Gemma Open-Weight AI Copilot**. 
 
 ### Who I Built It For:
-I built this for my friend **Dr. Priya Raman**, an Associate Professor and Faculty Event Coordinator at an engineering university. Every semester, her campus hosts flagship technical fests (24-hour hackathons, combat robotics arenas, clean-tech expos) and cultural festivals (battle of the bands, street theater) with **over 1,500 students from 30+ regional colleges and universities**.
+I built this for my friend, an Associate Professor and Faculty Event Coordinator at an engineering university. Every semester, her campus hosts flagship technical fests (24-hour hackathons, combat robotics arenas, clean-tech expos) and cultural festivals (battle of the bands, street theater) with **over 1,500 students from 30+ regional colleges and universities**.
 
 ### The Real Problem It Solves:
-Before UniSphere EMS, Dr. Priya's desk was buried under operational chaos:
+Before UniSphere EMS, my friend's desk was buried under operational chaos:
 1. **Multi-College Verification & Long Gate Queues:** Cross-referencing hundreds of external students arriving from other institutions against fragmented spreadsheets resulted in 45-minute bottlenecks at campus gates.
 2. **Scattered Multi-Category Vendor Operations:** University procurement requires precise coordination across **Catering** (dietary splits for hundreds of guests), **Stage & Ambience Decor** (24x10 ft vinyl backdrops, welcome arches), **Floral Art** (VIP dignitary bouquets, brass lamp garlands for inauguration), and **AV/Sound Systems**. Coordinators juggled paper chits and phone calls with zero unified visibility.
 3. **Multi-Tier Admin Approvals:** Student clubs struggled to obtain quick dean and finance clearances for event budgets and external participant admissions.
@@ -24,15 +28,16 @@ Before UniSphere EMS, Dr. Priya's desk was buried under operational chaos:
 
 **UniSphere EMS** gives university coordinators an intuitive web dashboard paired with an **on-premise Gemma 2 open-weight AI copilot** that automates schedule synthesis, calculates exact vendor allocations, drafts corporate sponsorship letters, generates QR admission passes, and provides live gate verification.
 
-When I showed the working prototype to Dr. Priya over a video call, her immediate reaction was:
+When I showed the working prototype to my friend over a video call, his immediate reaction was:
 > *"This solves the exact nightmare we face every October fest! Having the QR passes and being able to calculate the exact catering plates and stage backdrop specs with an AI that doesn't cost our department a single rupee in cloud tokens is a game changer."*
 
 ---
 
 ## Demo
 
+## [UniSphere EMS - Demo](https://unisphere-ems.vercel.app/)
 * **Live Web App:** Self-contained single-page application with responsive dark/light styling, interactive Gemma studio, and gate scanner simulator.
-* **Local Run:** Accessible at `http://localhost:3000` via `npm start`.
+[unisphere-ems.vercel.app](https://unisphere-ems.vercel.app/)
 
 ### Key Application Workflows:
 1. **Interactive Fest Explorer:** Browse events with capacity meters, category tags, session timetables, and corporate sponsor lists.
@@ -50,7 +55,7 @@ When I showed the working prototype to Dr. Priya over a video call, her immediat
 
 The entire codebase is open-source under the MIT License:
 
-* **Repository:** `https://github.com/vinodhraj/unisphere-ems` *(Week 0 EMS Subfolder)*
+* **Repository:** `https://github.com/hacktoberfest2026/week0-ems` *(Week 0 EMS)*
 * **Architecture:** Node.js (v22+), Express, In-Memory & JSON Atomic Persistence, HTML5, Tailwind CSS, Lucide Icons, QRCode Generator, and Google Gemma Open-Weight AI Architecture.
 * **Test Suite:** 16 automated tests covering events, registrations, ticket verification, admin controls, and all Gemma AI endpoints.
 
@@ -116,7 +121,7 @@ I am entering this project in the following Hacktoberfest 2026 categories:
 * **Featured Partner Category: Best Use of Gemma ($200)**  
   * *Rationale:* The application is architected from the ground up around Google's open-weight **Gemma** model (`gemma2:2b`), providing local inference for event schedule generation, multi-vendor hospitality and floral planning, corporate sponsorship pitch drafting, and student concierge Q&A.
 * **Hacktoberfest Weekend Challenge: Overall Winner ($250)**  
-  * *Rationale:* Built directly for a real friend (Dr. Priya Raman) to solve an authentic, high-friction university event management challenge, fully embodying the "Build for a Friend" prompt and Hacktoberfest 2026's open-source AI mission.
+  * *Rationale:* Built directly for a real friend to solve an authentic, high-friction university event management challenge, fully embodying the "Build for a Friend" prompt and Hacktoberfest 2026's open-source AI mission.
 
 ---
 

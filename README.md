@@ -1,5 +1,9 @@
 # 🎓 UniSphere EMS — University Event Management System with Gemma Copilot
 
+<p align="center">
+  <img src="./cover.jpg" alt="UniSphere EMS Cover Banner" width="100%" style="border-radius: 16px;"/>
+</p>
+
 > **Hacktoberfest 2026 Weekend Challenge Submission**  
 > *Theme: Build for a Friend* | *Primary Category: Best Use of Gemma*
 
