@@ -46,7 +46,7 @@ app.get('*', (req, res, next) => {
 });
 
 // Start Server
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   app.listen(PORT, async () => {
     console.log(`\n=============================================================`);
     console.log(`🎓 UniSphere EMS - University Event Management System`);

@@ -4,7 +4,10 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DATA_FILE = path.join(__dirname, '..', 'data', 'ems.json');
+const SEED_FILE = path.join(__dirname, '..', 'data', 'ems.json');
+const DATA_FILE = process.env.VERCEL
+  ? path.join('/tmp', 'ems.json')
+  : SEED_FILE;
 
 const INITIAL_DATA = {
   events: [
@@ -457,6 +460,10 @@ class Database {
       if (fs.existsSync(DATA_FILE)) {
         const raw = fs.readFileSync(DATA_FILE, 'utf-8');
         this.data = JSON.parse(raw);
+      } else if (fs.existsSync(SEED_FILE)) {
+        const raw = fs.readFileSync(SEED_FILE, 'utf-8');
+        this.data = JSON.parse(raw);
+        this.persist();
       } else {
         this.data = JSON.parse(JSON.stringify(INITIAL_DATA));
         this.persist();
